@@ -1,0 +1,21 @@
+{
+  "name": "software-engineer-camping-2025",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.87.0",
+    "vite": "^6.3.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8"
+  }
+}
