@@ -2,7 +2,7 @@
 @import "bootstrap/functions";
 
 // Customize some defaults
-@import "helpers/variables";
+@import "abstract/variables";
 
 // Required
 @import "bootstrap/variables";
@@ -18,7 +18,7 @@
 @import "bootstrap/containers";
 @import "bootstrap/grid";
 // @import "bootstrap/tables";
-// @import "bootstrap/forms";
+@import "bootstrap/forms";
 @import "bootstrap/buttons";
 @import "bootstrap/transitions";
 // @import "bootstrap/dropdown";
@@ -55,27 +55,11 @@
 //
 @import "base/base";
 
+@import "layout/navbar";
+@import "layout/header";
 
-// my utilities
-//@import "helpers/utilities";
-.truncate-2-lines {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;      /* 顯示幾行 */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+@import "components/pagination";
+@import "components/searchbar";
 
-.hover-zoom {
-  transition: transform .3s;
-  &:hover {
-    transform: scale(1.05);
-  }
-}
+@import "helpers/utilities";
 
-.hover-underline {
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}

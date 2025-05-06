@@ -1,0 +1,38 @@
+.truncate-2-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      /* 顯示幾行 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.w-md-50 {
+  @include media-breakpoint-up(md) {
+    width: 50% !important;
+  }
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.hover-zoom {
+  transition: transform .3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.hover-underline {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.hover-bg-gray {
+  transition: background-color .15s;
+  &:hover {
+    background-color: $gray-200;
+  }
+}
