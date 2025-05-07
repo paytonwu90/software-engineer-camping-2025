@@ -1,9 +1,9 @@
 .hero-section2 {
-  background-image: url('../../assets/images/mobile/index/Hero Section2.png');
+  background-image: url('@images/mobile/index/Hero_Section2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @include media-breakpoint-up(lg) {
-    background-image: url('../../assets/images/desktop/index/Hero Section2.png');
+    background-image: url('@images/desktop/index/Hero_Section2.png');
   }
 }
