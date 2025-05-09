@@ -19,7 +19,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
-        blog: resolve(__dirname, 'src/blog.html')
+        blog: resolve(__dirname, 'src/blog.html'),
+        blogContent: resolve(__dirname, 'src/blog-content.html')
       }
     }
   },
