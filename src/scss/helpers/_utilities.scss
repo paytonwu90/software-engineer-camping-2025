@@ -12,6 +12,18 @@
   }
 }
 
+.w-lg-50 {
+  @include media-breakpoint-up(lg) {
+    width: 50% !important;
+  }
+}
+
+.w-xl-35\.3 {
+  @include media-breakpoint-up(xl) {
+    max-width: 35.3% !important;
+  }
+}
+
 .fw-black {
   font-weight: 900;
 }
