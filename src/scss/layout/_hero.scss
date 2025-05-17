@@ -1,0 +1,32 @@
+.hero-bg {
+  background-image: url('@images/mobile/index/Hero_Section2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include media-breakpoint-up(lg) {
+    background-image: url('@images/desktop/index/Hero_Section2.png');
+  }
+}
+
+.hero__intro-container {
+  position: relative;
+  margin-top: -160px;
+  
+  @include media-breakpoint-up(lg) {
+    margin-top: -80px;
+  }
+  @include media-breakpoint-up(xxl) {
+    margin-top: -160px;
+  }
+}
+
+.hero__intro {
+  @include media-breakpoint-up(lg) {
+    width: 70%;
+    margin: 0 80px 0 auto;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 56.09%;
+    margin: 0 80px 0 auto;
+  }
+}

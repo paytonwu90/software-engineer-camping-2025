@@ -3,9 +3,16 @@ img {
 }
 
 h1 {
-  font-size: 3.25rem;
+  @include font-size(3.25rem);
+  
   @include media-breakpoint-up(lg) {
-    font-size: 7.5rem;
+    @include font-size(4.5rem);
+  }
+  @include media-breakpoint-up(xl) {
+    @include font-size(6rem);
+  }
+  @include media-breakpoint-up(xxl) {
+    @include font-size(7.5rem);
   }
 }
 

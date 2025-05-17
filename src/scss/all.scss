@@ -7,6 +7,11 @@
 // Required
 @import "bootstrap/variables";
 @import "bootstrap/variables-dark";
+
+// Custom utilities map
+@import "abstract/utilities-map";
+
+// Required
 @import "bootstrap/maps";
 @import "bootstrap/mixins";
 @import "bootstrap/utilities";
@@ -54,17 +59,25 @@
 $bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
 @import "bootstrap-icons/font/bootstrap-icons";
 
+// import Swiper and modules styles
+@import "swiper/css";
+// @import "swiper/css/navigation";
+
+
 //
 // Custom styles
 //
 @import "base/base";
 
 @import "layout/navbar";
-@import "layout/header";
+@import "layout/hero";
 
 @import "components/callout";
 @import "components/pagination";
 @import "components/searchbar";
+@import "components/swiper";
+
+@import "pages/index";
 
 @import "helpers/utilities";
 
