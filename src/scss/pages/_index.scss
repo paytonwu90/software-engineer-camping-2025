@@ -73,16 +73,35 @@
   background-color: #f1f1f1;
 }
 
-.index-contact__btn {
+.contact-info {
+  position: relative;
   color: #000;
-  transition: background-color .15s, color .15s;
-  @include media-breakpoint-up(lg) {
-    padding: 10px;
-    transform: translateX(10px);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $primary;
+    transition: width .5s;
   }
 
   &:hover {
     color: $primary;
-    background-color: $gray-200;
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.contact-info__arrow {
+  color: #000;
+  transition: transform .4s, color .4s;
+
+  .contact-info:hover & {
+    color: $primary;
+    transform: translateX(10px);
   }
 }
