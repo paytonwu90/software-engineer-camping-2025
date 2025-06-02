@@ -78,6 +78,22 @@
   background-color: #f5f5f5;
 }
 
+.animation {
+  animation: animation 2s forwards;
+  animation-iteration-count: 2;
+}
+
+@keyframes animation {
+  from {
+    box-shadow: none;
+  }
+  to {
+    //#7ba4c0: 小八頭上的灰藍色
+    //#dce6ed: 小八頭上的灰藍色 再更淺
+    box-shadow: 0 0 5px 40px rgba(220, 230, 237, .7);
+  }
+}
+
 .newsletter-input {
   background-color: #f1f1f1;
 }

@@ -50,3 +50,20 @@ const swiper = new Swiper('.swiper', {
 
 
 AOS.init();
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animation');
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+// 指定要觀察的目標元素
+if (document.body.clientWidth >= 1280) {
+  const target = document.querySelector('.newsletter');
+  observer.observe(target);
+}
