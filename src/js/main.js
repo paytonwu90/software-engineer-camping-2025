@@ -7,6 +7,8 @@ import '../scss/all.scss'
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
+import AOS from 'aos';
+
 
 document.querySelectorAll('a[href="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -45,3 +47,6 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+
+
+AOS.init();

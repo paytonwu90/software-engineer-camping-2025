@@ -9,7 +9,7 @@
     bottom: 0;
     width: 0;
     height: 5px;
-    background: darken($color: $primary, $amount: 15%);
+    background-color: $primary;
     transition: width .3s;
   }
   &.active::after, &:hover::after {

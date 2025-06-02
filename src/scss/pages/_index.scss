@@ -21,18 +21,22 @@
     }
   }
 
-  &__description {
+  //description 外面需要再包一層 wrapper 並且設定 display:flex 的原因是，如果單純靠 description 本身 transform，
+  //會使 aos 的 transform 動畫受影響
+  &__description-wrapper {
     @include media-breakpoint-up(lg) {
       position: absolute;
-      top: 50%;
+      display: flex;
+      align-items: center;
+      top: 0;
       right: 0;
-      transform: translateY(-50%);
       width: 44.6%;
+      height: 100%;
     }
   }
 
   &:nth-of-type(even) {
-    .service__description {
+    .service__description-wrapper {
       @include media-breakpoint-up(lg) {
         left: 0;
         right: auto;
@@ -41,15 +45,20 @@
   }
 }
 
-.success-sotries__description-container {
-  margin-top: -160px;
+.success-sotries {
+  //需要再包一層 outer 的原因同 .service__description-wrapper
+  &__description-outer {
+    height: 100%;
+    margin-top: -160px;
 
-  @include media-breakpoint-up(lg) {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    margin-top: 0;
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      top: 0;
+      right: 0;
+      margin-top: 0;
+    }
   }
 }
 

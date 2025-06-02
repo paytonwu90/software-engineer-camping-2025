@@ -1,0 +1,57 @@
+//mobile: fade-up, desktop: none
+[data-aos="fade-up__lg:none"] {
+  opacity: 0;
+  transform: translateY(100px);
+  transition-property: transform, opacity;
+
+  @include media-breakpoint-up(lg) {
+    //這裡單純指定 opacity: 1 沒有用，因為 aos 用了一個很長的選擇器來指定 opacity: 0，要蓋掉它的話要考慮 !important
+    //不然就是把 data-aos 的值改成非 fade 開頭
+    opacity: 1 !important;
+    transform: none;
+  }
+
+  &.aos-animate {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+//mobile: none, desktop: fade-[right|left|up]
+[data-aos="lg:fade-left"] {
+  @include media-breakpoint-up(lg) {
+    opacity: 0;
+    transform: translateX(100px);
+    transition-property: transform, opacity;
+
+    &.aos-animate {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+[data-aos="lg:fade-right"] {
+  @include media-breakpoint-up(lg) {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition-property: transform, opacity;
+
+    &.aos-animate {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+[data-aos="lg:fade-up"] {
+  @include media-breakpoint-up(lg) {
+    opacity: 0;
+    transform: translateY(100px);
+    transition-property: transform, opacity;
+
+    &.aos-animate {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
